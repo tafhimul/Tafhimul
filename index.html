@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thrive Travel</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="totalcontainer">
+
+        <!-- Navbar start -->
+        <div class="menubar">
+            <div class="mainmenu">
+                <div class="logo">Thrive Travel</div>
+                <div class="menu">
+                    <ul>
+                        <li><a href="#Home">Home</a></li>
+                        <li><a href="#Destination">Destination</a></li>
+                        <li><a href="#Packages">Packages</a></li>
+                        <li><a href="#Hotels">Hotels</a></li>
+                        <li><a href="#Blog">Blog</a></li>
+                        <li><a href="#Contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="navbtns">
+                    <button class="btn-login">Login</button>
+                    <button class="btn-signup">Sing Up</button>
+                </div>
+                <div class="hamburger" onclick="toggleMenu()">
+                    <span></span><span></span><span></span>
+                </div>
+            </div>
+        </div>
+        <!-- Navbar end -->
+
+        <!-- Hero section start -->
+        <div class="benner"id=Home>
+            <div class="search-box">
+                <div class="search-tabs">
+                    <button class="tab active">Hotels</button>
+                    <button class="tab">Packages</button>
+                </div>
+                <div class="search-fields">
+                    <div class="field-group">
+                        <label>From</label>
+                        <input type="text" value="Dhaka (DAC)" />
+                    </div>
+                    <div class="field-group">
+                        <label>To</label>
+                        <input type="text" value="Dubai (DXB)" />
+                    </div>
+                    <div class="field-group">
+                        <label>Departure</label>
+                        <input type="text" value="20 May, 2025" />
+                    </div>
+                    <div class="field-group">
+                        <label>Return</label>
+                        <input type="text" value="28 May, 2025" />
+                    </div>
+                    <div class="field-group">
+                        <label>Travellers</label>
+                        <input type="text" value="1 Traveler" />
+                    </div>
+                    <button class="search-btn">Search</button>
+                </div>
+            </div>
+        </div>
+        <!-- Hero section end -->
+
+        <!-- Popular Destinations start -->
+        <div class="destinations"id=Destination>
+            <div class="section-inner">
+                <h2 class="section-title">Popular Destinations</h2>
+                <div class="dest-grid">
+                    <div class="dest-card">
+                        <div class="dest-img" style="background-image:url('Image/dubai.jpg')"></div>
+                        <p class="dest-name">Dubai</p>
+                        <p class="dest-price">Starting From <span>$799</span></p>
+                    </div>
+                    <div class="dest-card">
+                        <div class="dest-img" style="background-image:url('Image/maldives-tour.jpg')"></div>
+                        <p class="dest-name">Maldives</p>
+                        <p class="dest-price">Starting From $999</p>
+                    </div>
+                    <div class="dest-card">
+                        <div class="dest-img" style="background-image:url('Image/thailand.jpg')"></div>
+                        <p class="dest-name">Thailand</p>
+                        <p class="dest-price">Starting From $599</p>
+                    </div>
+                    <div class="dest-card">
+                        <div class="dest-img" style="background-image:url('Image/bali-tour.jpg')"></div>
+                        <p class="dest-name">Bali</p>
+                        <p class="dest-price">Starting From $499</p>
+                    </div>
+                    <div class="dest-card">
+                        <div class="dest-img" style="background-image:url('Image/turkey.jpg')"></div>
+                        <p class="dest-name">Turkey</p>
+                        <p class="dest-price">Starting From $699</p>
+                    </div>
+                    <div class="dest-card">
+                        <div class="dest-img" style="background-image:url('Image/coxsbazar.png')"></div>
+                        <p class="dest-name">Cox's Bazar</p>
+                        <p class="dest-price">Starting From $199</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Popular Destinations end -->
+
+        <!-- Featured Tour Packages start -->
+        <div class="featuredtours"id=Packages>
+            <div class="section-inner">
+                <h2 class="section-title">Featured Tour Packages</h2>
+                <div class="tour-grid">
+                    <div class="tour-card">
+                        <div class="tour-img" style="background-image:url('Image/dubai1.jpg')"></div>
+                        <div class="tour-info">
+                            <p class="tour-name">7 Days Dubai Tour</p>
+                            <div class="tour-meta">
+                                <span>&#128337; 7 Days</span>
+                                <span>&#127769; 4 Nights</span>
+                            </div>
+                            <div class="tour-rating">&#9733; 4.8 <span class="rev">(120)</span></div>
+                            <div class="tour-footer">
+                                <p class="tour-price">$1200</p>
+                                <button class="book-btn">Book Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tour-card">
+                        <div class="tour-img" style="background-image:url('Image/maldives-tour.jpg')"></div>
+                        <div class="tour-info">
+                            <p class="tour-name">5 Days Maldives Tour</p>
+                            <div class="tour-meta">
+                                <span>&#128337; 5 Days</span>
+                                <span>&#127769; 4 Nights</span>
+                            </div>
+                            <div class="tour-rating">&#9733; 4.9 <span class="rev">(38)</span></div>
+                            <div class="tour-footer">
+                                <p class="tour-price">$999</p>
+                                <button class="book-btn">Book Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tour-card">
+                        <div class="tour-img" style="background-image:url('Image/thailand-tour.jpg')"></div>
+                        <div class="tour-info">
+                            <p class="tour-name">8 Days Thailand Tour</p>
+                            <div class="tour-meta">
+                                <span>&#128337; 8 Days</span>
+                                <span>&#127769; 7 Nights</span>
+                            </div>
+                            <div class="tour-rating">&#9733; 4.9 <span class="rev">(88)</span></div>
+                            <div class="tour-footer">
+                                <p class="tour-price">$1100</p>
+                                <button class="book-btn">Book Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tour-card">
+                        <div class="tour-img" style="background-image:url('Image/')"></div>
+                        <div class="tour-info">
+                            <p class="tour-name">6 Days Bali Tour</p>
+                            <div class="tour-meta">
+                                <span>&#128337; 6 Days</span>
+                                <span>&#127769; 5 Nights</span>
+                            </div>
+                            <div class="tour-rating">&#9733; 4.6 <span class="rev">(75)</span></div>
+                            <div class="tour-footer">
+                                <p class="tour-price">$850</p>
+                                <button class="book-btn">Book Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Featured Tour Packages end -->
+
+        <!-- Filter bar start -->
+        <div class="filterbar">
+            <div class="section-inner">
+                <div class="filter-btns">
+                    <button class="filter-btn">All Destination</button>
+                    <button class="filter-btn">AllDuration</button>
+                    <button class="filter-btn">Price</button>
+                    <button class="filter-btn">Filter</button>
+                </div>
+            </div>
+        </div>
+        <!-- Filter bar end -->
+
+        <!-- All Tour Cards start -->
+        <div class="alltours"id=Hotels>
+            <div class="section-inner">
+                <div class="alltour-grid">
+                    <div class="tour-card big">
+                        <div class="tour-img big-img" style="background-image:url('Image/thailand1.jpg')"></div>
+                        <div class="tour-info">
+                            <p class="tour-name">5 Days Thailand Tour</p>
+                            <div class="tour-meta">
+                                <span>&#128337; 5 Days</span>
+                                <span>&#127769; 4 Nights</span>
+                            </div>
+                            <div class="tour-rating">&#9733; 4.8 <span class="rev">(105)</span></div>
+                            <div class="tour-footer">
+                                <p class="tour-price">$800</p>
+                                <button class="book-btn">Book Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tour-card big">
+                        <div class="tour-img big-img" style="background-image:url('Image/dubai2.jpg')"></div>
+                        <div class="tour-info">
+                            <p class="tour-name">7 Days Dubai Tour</p>
+                            <div class="tour-meta">
+                                <span>&#128337; 7 Days</span>
+                                <span>&#127769; 6 Nights</span>
+                            </div>
+                            <div class="tour-rating">&#9733; 4.9 <span class="rev">(92)</span></div>
+                            <div class="tour-footer">
+                                <p class="tour-price">$1200</p>
+                                <button class="book-btn">Book Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tour-card big">
+                        <div class="tour-img big-img" style="background-image:url('Image/bali-tour.jpg')"></div>
+                        <div class="tour-info">
+                            <p class="tour-name">6 Days Bali Tour</p>
+                            <div class="tour-meta">
+                                <span>&#128337; 6 Days</span>
+                                <span>&#127769; 5 Nights</span>
+                            </div>
+                            <div class="tour-rating">&#9733; 4.9 <span class="rev">(109)</span></div>
+                            <div class="tour-footer">
+                                <p class="tour-price">$850</p>
+                                <button class="book-btn">Book Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tour-card big">
+                        <div class="tour-img big-img" style="background-image:url('Image/turkey1.jpg')"></div>
+                        <div class="tour-info">
+                            <p class="tour-name">5 Days Turkey Tour</p>
+                            <div class="tour-meta">
+                                <span>&#128337; 5 Days</span>
+                                <span>&#127769; 4 Nights</span>
+                            </div>
+                            <div class="tour-rating">&#9733; 4.6 <span class="rev">(58)</span></div>
+                            <div class="tour-footer">
+                                <p class="tour-price">$1100</p>
+                                <button class="book-btn">Book Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tour-card big">
+                        <div class="tour-img big-img" style="background-image:url('Image/maldives.jpg')"></div>
+                        <div class="tour-info">
+                            <p class="tour-name">4 Days Maldives Tour</p>
+                            <div class="tour-meta">
+                                <span>&#128337; 4 Days</span>
+                                <span>&#127769; 3 Nights</span>
+                            </div>
+                            <div class="tour-rating">&#9733; 4.9 <span class="rev">(66)</span></div>
+                            <div class="tour-footer">
+                                <p class="tour-price">$700</p>
+                                <button class="book-btn">Book Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tour-card big">
+                        <div class="tour-img big-img" style="background-image:url('Image/europe.jpg')"></div>
+                        <div class="tour-info">
+                            <p class="tour-name">10 Days Europe Tour</p>
+                            <div class="tour-meta">
+                                <span>&#128337; 10 Days</span>
+                                <span>&#127769; 9 Nights</span>
+                            </div>
+                            <div class="tour-rating">&#9733; 4.9 <span class="rev">(131)</span></div>
+                            <div class="tour-footer">
+                                <p class="tour-price">$1800</p>
+                                <button class="book-btn">Book Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- All Tour Cards end -->
+
+        <!-- Services section start -->
+        <div class="services"id=Blog>
+            <div class="section-inner">
+                <div class="service-grid">
+                    <div class="service-item">
+                        <div class="service-icon">&#128179;</div>
+                        <div>
+                            <p class="service-title">Best Price Guarantee</p>
+                            <p class="service-desc">We offer the best prices for your dream destinations.</p>
+                        </div>
+                    </div>
+                    <div class="service-item">
+                        <div class="service-icon">&#128737;</div>
+                        <div>
+                            <p class="service-title">Trusted &amp; Secure</p>
+                            <p class="service-desc">Your safety and trust is our top priority.</p>
+                        </div>
+                    </div>
+                    <div class="service-item">
+                        <div class="service-icon">&#128222;</div>
+                        <div>
+                            <p class="service-title">24/7 Customer Support</p>
+                            <p class="service-desc">We are here to help you anytime, anywhere.</p>
+                        </div>
+                    </div>
+                    <div class="service-item">
+                        <div class="service-icon">&#128276;</div>
+                        <div>
+                            <p class="service-title">Easy Booking</p>
+                            <p class="service-desc">Book your trip in just a few clicks.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Services section end -->
+
+        <!-- Happy Clients start -->
+        <div class="testimonials">
+            <div class="section-inner">
+                <h2 class="section-title">Happy Clients</h2>
+                <div class="testi-grid">
+                    <div class="testi-card">
+                        <div class="testi-top">
+                            <div class="testi-avatar">M</div>
+                            <div>
+                                <p class="testi-name">Mrakax3</p>
+                                <p class="testi-role">CEO of the Quality Clean, UK</p>
+                            </div>
+                        </div>
+                        <p class="testi-text">Thrive Travel made our honeymoon in Maldives absolutely magical. Everything was perfectly arranged!</p>
+                    </div>
+                    <div class="testi-card">
+                        <div class="testi-top">
+                            <div class="testi-avatar dark">T</div>
+                            <div>
+                                <p class="testi-name">Tim David</p>
+                                <p class="testi-role">Co-founder at Pmict, USA</p>
+                            </div>
+                        </div>
+                        <p class="testi-text">The booking process was so easy and the support team was very helpful throughout our trip.</p>
+                    </div>
+                </div>
+                <div class="testi-nav">
+                    <button class="testi-arrow">&#8592;</button>
+                    <button class="testi-arrow">&#8594;</button>
+                </div>
+            </div>
+        </div>
+        <!-- Happy Clients end -->
+
+        <!-- Subscribe section start -->
+        <div class="subscribe">
+            <div class="section-inner subscribe-inner">
+                <div class="subscribe-text">
+                    <h3>Subscribe to Get Special Offers</h3>
+                    <p>Be the first to know about exclusive deals and offers.</p>
+                </div>
+                <div class="subscribe-form">
+                    <input type="email" placeholder="Enter your email" />
+                    <button>Subscribe</button>
+                </div>
+            </div>
+        </div>
+        <!-- Subscribe section end -->
+
+        <!-- Footer start -->
+        <div class="footer"id=Contact>
+            <div class="section-inner footer-inner">
+                <div class="footer-brand">
+                    <p>We make your travel easy,<br>enjoyable and unforgettable.</p>
+                </div>
+                <div class="footer-col">
+                    <p class="footer-heading">Quick Links</p>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Destinations</a></li>
+                        <li><a href="#">Packages</a></li>
+                        <li><a href="#">Flights</a></li>
+                        <li><a href="#">Hotels</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <p class="footer-heading">Useful Links</p>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Terms &amp; Conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <p class="footer-heading">Contact Us</p>
+                    <ul class="contact-list">
+                        <li>&#128222; +880 1234 567890</li>
+                        <li>&#9993; info@thrivetravel.com</li>
+                        <li>&#128205; House 12, Road 5, Uttara, Dhaka, Bangladesh</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <p class="footer-heading">Flow US</p>
+                    <div class="social-icons">
+                        <a href="#" class="soc fb">f</a>
+                        <a href="#" class="soc ig">&#9679;</a>
+                        <a href="#" class="soc yt">&#9654;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer end -->
+
+    </div>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.querySelector('.menu');
+            menu.classList.toggle('open');
+        }
+
+        // Tab switching
+        const tabs = document.querySelectorAll('.tab');
+        tabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                tabs.forEach(t => t.classList.remove('active'));
+                tab.classList.add('active');
+            });
+        });
+    </script>
+</body>
+</html>
